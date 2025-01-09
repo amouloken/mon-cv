@@ -3,97 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV de André Eric Mouloken</title>
+    <title>Andre Eric Mouloken - CV</title>
     <style>
         body {
-            font-family: "Arial", sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            color: #333;
+            display: flex;
+            justify-content: center;
         }
         .container {
-            max-width: 800px;
-            margin: 30px auto;
-            background: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            background-color: white;
             padding: 20px;
-        }
-        h1 {
-            font-size: 2em;
-            margin: 0;
-            color: #2c3e50;
-        }
-        h2 {
-            font-size: 1.5em;
-            margin-top: 20px;
-            color: #34495e;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .contact-info p {
-            margin: 5px 0;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
-        .bold {
-            font-weight: bold;
-            color: #2c3e50;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .header {
-            background: #2c3e50;
-            color: #fff;
-            padding: 15px;
-            text-align: center;
-            border-radius: 5px 5px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         .header h1 {
             margin: 0;
-            font-size: 2.5em;
         }
-        .header p {
+        .header .contact {
+            text-align: right;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        .skills, .languages, .certifications {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills div, .languages div, .certifications div {
+            width: 50%;
+        }
+        .work-history, .education {
+            margin-top: 20px;
+        }
+        .job, .education-item {
+            margin-bottom: 20px;
+        }
+        .job h3, .education-item h3 {
+            margin: 0;
+        }
+        .job p, .education-item p {
             margin: 5px 0;
-        }
-        .highlight {
-            background: #ecf0f1;
-            padding: 10px;
-            border-left: 5px solid #3498db;
-            margin-bottom: 15px;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>André Eric Mouloken</h1>
-            <p>7181, Feluy, Belgique | <a href="mailto:andremouloken@gmail.com">andremouloken@gmail.com</a> | +32 467 810 630</p>
-            <p><a href="https://bold.pro/my/andre-mouloken/173r" target="_blank">https://bold.pro/my/andre-mouloken/173r</a></p>
-        </div>
-
-        <div class="section contact-info">
-            <div class="highlight">
-                <p><span class="bold">Adresse :</span> 7181, Feluy, Belgique</p>
-                <p><span class="bold">Téléphone :</span> +32 467 810 630</p>
-                <p><span class="bold">Email :</span> <a href="mailto:andremouloken@gmail.com">andremouloken@gmail.com</a></p>
+            <div>
+                <h1>Andre Eric Mouloken</h1>
+                <p>Agile Project Manager With Data Engineering Skills</p>
+            </div>
+            <div class="contact">
+                <p>Address: 7181, Feluy, Belgium</p>
+                <p>Phone: +32467810630</p>
+                <p>Email: andremouloken@gmail.com</p>
+                <p><a href="#">Bold Profile</a></p>
             </div>
         </div>
-
         <div class="section skills">
-            <h2>Compétences</h2>
-            <ul>
-                <li><span class="bold">Programmation :</span> C#, Python, JavaScript, Bash, CSS</li>
-                <li><span class="bold">Outils
+            <h2>Skills</h2>
+            <div>
+                <p>Programming: C#, Python, Javascript, Bash, CSS</p>
+                <p>Pandas • Git • Agile Methodologies • SQL Server Integration Services (SSIS) • Python (Programming Language) • Tableau • JavaScript • Microsoft Power BI • SQL Server Reporting Services (SSRS) • SQL Server Analysis Services (SSAS)</p>
+            </div>
+            <div>
+                <p>Containerization: Portainer Docker Swarm and Kubernetes AWS ECR</p>
+                <p>Cloud Infrastructure: AWS (IaaS, PaaS, SaaS, CLI/API, VPS), Auto Scaling, and Amazon S3.</p>
+            </div>
+        </div>
+        <div class="section languages">
+            <h2>Languages</h2>
+            <div>
+                <p>English</p>
+                <p>French</p>
+                <p>Dutch</p>
+            </div>
+        </div>
+        <div class="section work-history">
+            <h2>Work History</h2>
+            <div class="job">
+                <h3>Data Talent Engineer</h3>
+                <p>Rossel Application</p>
+                <p>Data/Integration Developer</p>
+                <p>2023-02 - Current</p>
+                <ul>
+                    <li>Designs, develops, and deploys complex data integration processes under the guidance of the Architect - Tech Lead.</li>
+                    <li>Defines requirements, conducts analysis, and implements data models and ETL jobs.</li>
+                    <li>Supports deployment and production operations.</li>
+                    <li>Ensures data quality and validates deliverables.</li>
+                    <li>Prioritizes performance, reusability, and effective monitoring.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Data and Business Intelligence</h3>
+                <p>School Name</p>
+                <p>Year</p>
+            </div>
+        </div>
+        <div class="section certifications">
+            <h2>Certifications</h2>
+            <div>
+                <p>Certified Scrum Master</p>
+                <p>Databricks Certified Data Engineer Associate</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
