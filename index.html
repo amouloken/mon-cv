@@ -3,135 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andre Eric Mouloken - CV</title>
+    <title>CV de André Eric Mouloken</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Arial", sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
+            color: #333;
         }
         .container {
-            width: 80%;
-            background-color: white;
+            max-width: 800px;
+            margin: 30px auto;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2em;
+            margin: 0;
+            color: #2c3e50;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #34495e;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .bold {
+            font-weight: bold;
+            color: #2c3e50;
         }
         .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #4CAF50; /* Couleur de fond de l'en-tête */
-            color: white;
-            padding: 20px;
+            background: #2c3e50;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
         }
         .header h1 {
             margin: 0;
+            font-size: 2.5em;
         }
-        .header .contact {
-            text-align: right;
-        }
-        .section {
-            margin-top: 20px;
-        }
-        .section h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-            color: #4CAF50; /* Couleur des titres de sections */
-        }
-        .skills, .languages, .certifications {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .skills div, .languages div, .certifications div {
-            width: 50%;
-            padding: 10px;
-        }
-        .work-history, .education {
-            margin-top: 20px;
-        }
-        .job, .education-item {
-            margin-bottom: 20px;
-        }
-        .job h3, .education-item h3 {
-            margin: 0;
-            color: #4CAF50; /* Couleur des sous-titres */
-        }
-        .job p, .education-item p {
+        .header p {
             margin: 5px 0;
         }
-        .job ul {
-            list-style-type: disc;
-            margin-left: 20px;
+        .highlight {
+            background: #ecf0f1;
+            padding: 10px;
+            border-left: 5px solid #3498db;
+            margin-bottom: 15px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <div>
-                <h1>Andre Eric Mouloken</h1>
-                <p>Agile Project Manager With Data Engineering Skills</p>
-            </div>
-            <div class="contact">
-                <p>Address: 7181, Feluy, Belgium</p>
-                <p>Phone: +32467810630</p>
-                <p>Email: andremouloken@gmail.com</p>
-                <p><a href="#">Bold Profile</a></p>
+            <h1>André Eric Mouloken</h1>
+            <p>7181, Feluy, Belgique | <a href="mailto:andremouloken@gmail.com">andremouloken@gmail.com</a> | +32 467 810 630</p>
+            <p><a href="https://bold.pro/my/andre-mouloken/173r" target="_blank">https://bold.pro/my/andre-mouloken/173r</a></p>
+        </div>
+
+        <div class="section contact-info">
+            <div class="highlight">
+                <p><span class="bold">Adresse :</span> 7181, Feluy, Belgique</p>
+                <p><span class="bold">Téléphone :</span> +32 467 810 630</p>
+                <p><span class="bold">Email :</span> <a href="mailto:andremouloken@gmail.com">andremouloken@gmail.com</a></p>
             </div>
         </div>
+
         <div class="section skills">
-            <h2>Skills</h2>
-            <div>
-                <p>Programming: C#, Python, Javascript, Bash, CSS</p>
-                <p>Pandas • Git • Agile Methodologies • SQL Server Integration Services (SSIS) • Python (Programming Language) • Tableau • JavaScript • Microsoft Power BI • SQL Server Reporting Services (SSRS) • SQL Server Analysis Services (SSAS)</p>
-            </div>
-            <div>
-                <p>Containerization: Portainer Docker Swarm and Kubernetes AWS ECR</p>
-                <p>Cloud Infrastructure: AWS (IaaS, PaaS, SaaS, CLI/API, VPS), Auto Scaling, and Amazon S3.</p>
-            </div>
+            <h2>Compétences</h2>
+            <ul>
+                <li><span class="bold">Programmation :</span> C#, Python, JavaScript, Bash, CSS</li>
+                <li><span class="bold">Outils :</span> Pandas, Git, SQL Server (SSIS, SSRS, SSAS), Tableau, Power BI</li>
+                <li><span class="bold">Conteneurisation :</span> Docker Swarm, Kubernetes, Portainer</li>
+                <li><span class="bold">Cloud :</span> AWS, Azure, CLI/API</li>
+                <li><span class="bold">Certifications :</span> Scrum, PRINCE2, Databricks Certified Data Engineer Associate</li>
+            </ul>
         </div>
-        <div class="section languages">
-            <h2>Languages</h2>
-            <div>
-                <p>English</p>
-                <p>French</p>
-                <p>Dutch</p>
-            </div>
+
+        <div class="section">
+            <h2>Expériences Professionnelles</h2>
+            <ul>
+                <li><span class="bold">Agile Project Manager</span> (Avec compétences en Data Engineering)</li>
+                <li><span class="bold">Data Talend Engineer</span>, Rossel Application (2023-02 - actuel)</li>
+                <li><span class="bold">DevOps Engineer (Stage)</span>, Ubidata (2022-04 - 2022-05)</li>
+                <li><span class="bold">School IT Operator</span>, University of Bridgeport (2015-01 - 2018-01)</li>
+                <li><span class="bold">Linux Administrator</span>, Aerotek (2013-01 - 2015-10)</li>
+                <li><span class="bold">IT Help Desk Specialist</span>, Adecco (2011-01 - 2013-01)</li>
+            </ul>
         </div>
-        <div class="section work-history">
-            <h2>Work History</h2>
-            <div class="job">
-                <h3>Data Talent Engineer</h3>
-                <p>Rossel Application</p>
-                <p>Data/Integration Developer</p>
-                <p>2023-02 - Current</p>
-                <ul>
-                    <li>Designs, develops, and deploys complex data integration processes under the guidance of the Architect - Tech Lead.</li>
-                    <li>Defines requirements, conducts analysis, and implements data models and ETL jobs.</li>
-                    <li>Supports deployment and production operations.</li>
-                    <li>Ensures data quality and validates deliverables.</li>
-                    <li>Prioritizes performance, reusability, and effective monitoring.</li>
-                </ul>
-            </div>
-        </div>
+
         <div class="section education">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>Data and Business Intelligence</h3>
-                <p>School Name</p>
-                <p>Year</p>
-            </div>
+            <h2>Formation</h2>
+            <ul>
+                <li><span class="bold">Master's : Computer Engineering</span>, University of Bridgeport, USA (2015-10 - 2017-12)</li>
+                <li><span class="bold">DevOps Engineer</span>, BeCode, Belgium (2021-09 - 2022-03)</li>
+                <li><span class="bold">Data and Business Intelligence</span>, Digital City, Belgium (2022-08 - 2023-12)</li>
+            </ul>
         </div>
+
         <div class="section certifications">
             <h2>Certifications</h2>
-            <div>
-                <p>Certified Scrum Master</p>
-                <p>Databricks Certified Data Engineer Associate</p>
-            </div>
+            <ul>
+                <li><span class="bold">Certified Scrum Master</span></li>
+                <li><span class="bold">Databricks Certified Data Engineer Associate</span></li>
+                <li><span class="bold">PRINCE2 Foundation PeopleCert</span></li>
+            </ul>
         </div>
     </div>
 </body>
