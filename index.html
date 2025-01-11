@@ -4,7 +4,7 @@
  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume - Andre Eric Mouloken</title>
-   <style>
+    <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -13,7 +13,7 @@
 
     .container {
       display: flex;
-      flex-wrap: wrap; /* Rend le conteneur flexible et empile les éléments sur petits écrans */
+      flex-wrap: wrap;
       max-width: 1000px;
       margin: 0 auto;
       border: 1px solid #ccc;
@@ -22,33 +22,33 @@
     .sidebar {
       background-color: #0b3b65;
       color: white;
-      width: 100%; /* Défaut pour petits écrans */
+      width: 100%;
       padding: 20px;
       box-sizing: border-box;
     }
 
     @media (min-width: 768px) {
       .sidebar {
-        width: 30%; /* Largeur augmentée sur grands écrans */
+        width: 30%;
       }
     }
 
     .sidebar img {
-      max-width: 100%; /* Empêche le débordement horizontal */
-      height: auto; /* Maintient le ratio de l'image */
+      max-width: 100%;
+      height: auto;
       display: block;
       margin: 0 auto;
     }
 
     .main {
-      width: 100%; /* Défaut pour petits écrans */
+      width: 100%;
       padding: 20px;
       box-sizing: border-box;
     }
 
     @media (min-width: 768px) {
       .main {
-        width: 70%; /* Largeur augmentée sur grands écrans */
+        width: 70%;
       }
     }
 
@@ -84,6 +84,7 @@
       margin-bottom: 10px;
     }
 
+    /* Barres de progression */
     .responsive-bar {
       background-color: #ddd;
       border-radius: 5px;
@@ -94,13 +95,33 @@
       margin-bottom: 10px;
     }
 
-    .responsive-bar div {
+    .bar-excellent {
       background-color: #0056b3;
       height: 100%;
+      text-align: center;
       line-height: 20px;
       color: white;
-      text-align: center;
       font-size: 12px;
+      width: 90%; /* Représente un niveau excellent */
+    }
+
+    .bar-good {
+      background-color: #007bff;
+      height: 100%;
+      text-align: center;
+      line-height: 20px;
+      color: white;
+      font-size: 12px;
+      width: 50%; /* Représente un niveau bon */
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
