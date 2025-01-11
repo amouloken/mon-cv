@@ -4,7 +4,7 @@
  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume - Andre Eric Mouloken</title>
-  <style>
+   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -13,8 +13,8 @@
 
     .container {
       display: flex;
-      flex-wrap: wrap; /* Rend le conteneur flexible sur les petits écrans */
-      max-width: 100%; /* Adapte le conteneur à l'écran */
+      flex-wrap: wrap; /* Rend le conteneur flexible et empile les éléments sur petits écrans */
+      max-width: 1000px;
       margin: 0 auto;
       border: 1px solid #ccc;
     }
@@ -22,45 +22,50 @@
     .sidebar {
       background-color: #0b3b65;
       color: white;
-      width: 100%; /* Sur petits écrans, prend toute la largeur */
-      padding: 20px;
-      box-sizing: border-box; /* Inclut le padding dans la largeur totale */
-    }
-
-    .sidebar img {
-      max-width: 100%; /* Rend l'image responsive */
-      height: auto;
-      display: block;
-      margin: 0 auto; /* Centre l'image */
-    }
-
-    .main {
-      width: 100%; /* Sur petits écrans, prend toute la largeur */
+      width: 100%; /* Défaut pour petits écrans */
       padding: 20px;
       box-sizing: border-box;
     }
 
     @media (min-width: 768px) {
       .sidebar {
-        width: 30%; /* Prend 30% de l'écran sur écrans larges */
+        width: 30%; /* Largeur augmentée sur grands écrans */
       }
+    }
+
+    .sidebar img {
+      max-width: 100%; /* Empêche le débordement horizontal */
+      height: auto; /* Maintient le ratio de l'image */
+      display: block;
+      margin: 0 auto;
+    }
+
+    .main {
+      width: 100%; /* Défaut pour petits écrans */
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: 768px) {
       .main {
-        width: 70%; /* Prend 70% de l'écran sur écrans larges */
+        width: 70%; /* Largeur augmentée sur grands écrans */
       }
     }
 
-    .section {
-      margin-bottom: 30px;
-    }
-
-    h1, h2 {
+    h1 {
+      font-size: 24px;
       margin-bottom: 10px;
     }
 
     h2 {
       font-size: 20px;
+      margin-bottom: 10px;
       border-bottom: 1px solid #ddd;
       padding-bottom: 5px;
+    }
+
+    .section {
+      margin-bottom: 30px;
     }
 
     p, li {
@@ -68,14 +73,15 @@
       line-height: 1.6;
     }
 
-    ul {
+    .skills ul,
+    .sidebar ul {
       list-style: none;
       padding: 0;
     }
 
-    .skills ul, .job ul {
-      list-style: disc;
-      padding-left: 20px;
+    .skills ul li,
+    .sidebar ul li {
+      margin-bottom: 10px;
     }
 
     .responsive-bar {
@@ -89,15 +95,13 @@
     }
 
     .responsive-bar div {
+      background-color: #0056b3;
       height: 100%;
       line-height: 20px;
       color: white;
       text-align: center;
       font-size: 12px;
     }
-
-    .bar-excellent { background-color: #0056b3; width: 100%; }
-    .bar-good { background-color: #0056b3; width: 50%; }
   </style>
 </head>
 <body>
