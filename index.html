@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+ <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume - Andre Eric Mouloken</title>
   <style>
@@ -13,7 +13,8 @@
 
     .container {
       display: flex;
-      max-width: 1000px;
+      flex-wrap: wrap; /* Rend le conteneur flexible sur les petits écrans */
+      max-width: 100%; /* Adapte le conteneur à l'écran */
       margin: 0 auto;
       border: 1px solid #ccc;
     }
@@ -21,54 +22,45 @@
     .sidebar {
       background-color: #0b3b65;
       color: white;
-      width: 30%;
+      width: 100%; /* Sur petits écrans, prend toute la largeur */
       padding: 20px;
+      box-sizing: border-box; /* Inclut le padding dans la largeur totale */
     }
 
-    .sidebar h1 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    .sidebar h2 {
-      margin-top: 30px;
-      font-size: 18px;
-      border-bottom: 2px solid white;
-      padding-bottom: 5px;
-    }
-
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .sidebar ul li {
-      margin-bottom: 10px;
+    .sidebar img {
+      max-width: 100%; /* Rend l'image responsive */
+      height: auto;
+      display: block;
+      margin: 0 auto; /* Centre l'image */
     }
 
     .main {
-      width: 70%;
+      width: 100%; /* Sur petits écrans, prend toute la largeur */
       padding: 20px;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: 768px) {
+      .sidebar {
+        width: 30%; /* Prend 30% de l'écran sur écrans larges */
+      }
+      .main {
+        width: 70%; /* Prend 70% de l'écran sur écrans larges */
+      }
     }
 
     .section {
       margin-bottom: 30px;
     }
 
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+
     h2 {
       font-size: 20px;
-      margin-bottom: 10px;
       border-bottom: 1px solid #ddd;
       padding-bottom: 5px;
-    }
-
-    .job, .education-item {
-      margin-bottom: 20px;
-    }
-
-    .job ul, .education-item ul {
-      list-style: disc;
-      padding-left: 20px;
     }
 
     p, li {
@@ -76,17 +68,42 @@
       line-height: 1.6;
     }
 
-    .skills ul {
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills ul, .job ul {
       list-style: disc;
       padding-left: 20px;
     }
+
+    .responsive-bar {
+      background-color: #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 20px;
+      margin-bottom: 10px;
+    }
+
+    .responsive-bar div {
+      height: 100%;
+      line-height: 20px;
+      color: white;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .bar-excellent { background-color: #0056b3; width: 100%; }
+    .bar-good { background-color: #0056b3; width: 50%; }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="sidebar">
-      <img src="https://raw.githubusercontent.com/amouloken/mon-cv/refs/heads/main/mypicCV.png" alt="Description of the image" />
-
+      <img src="https://raw.githubusercontent.com/amouloken/mon-cv/refs/heads/main/mypicCV.png" alt="Profile Picture" />
       <h1>ANDRE ERIC MOULOKEN</h1>
       <h2>Contact</h2>
       <ul>
@@ -98,27 +115,17 @@
       <h2>Skills</h2>
       <ul>
         <li>Programming: C#, Python, Javascript, Bash, CSS</li>
-        <li>Pandas · Git · Agile Methodologies · SQL Server Integration Services (SSIS) · Python (Programming Language) · Tableau · JavaScript · Microsoft Power BI · SQL Server Reporting Services (SSRS) · SQL Server Analysis Services (SSAS)</li>
+        <li>Pandas · Git · Agile Methodologies · SQL Server Integration Services (SSIS) · Python (Programming Language) · Tableau · JavaScript · Microsoft Power BI</li>
         <li>Containerization: Portainer Docker Swarm and Kubernetes AWS ECR</li>
-        <li>Cloud Infrastructure: AWS (IaaS, Paas, SaaS, CLI/API, VPS), Auto Scaling, and Amazon S3</li>
+        <li>Cloud Infrastructure: AWS (IaaS, Paas, SaaS, CLI/API, VPS)</li>
       </ul>
-     <h2>Languages</h2>
-<div style="margin-bottom: 15px;">
-  <p>English</p>
-  <div style="background-color: #ddd; border-radius: 5px; overflow: hidden; position: relative; width: 100%; height: 20px; margin-bottom: 10px;">
-    <div style="width: 100%; background-color: #0056b3; height: 100%; line-height: 20px; color: white; text-align: center; font-size: 12px;">Excellent</div>
-  </div>
-  <p>French</p>
-  <div style="background-color: #ddd; border-radius: 5px; overflow: hidden; position: relative; width: 100%; height: 20px; margin-bottom: 10px;">
-    <div style="width: 100%; background-color: #0056b3; height: 100%; line-height: 20px; color: white; text-align: center; font-size: 12px;">Excellent</div>
-  </div>
-  <p>Dutch</p>
-  <div style="background-color: #ddd; border-radius: 5px; overflow: hidden; position: relative; width: 100%; height: 20px; margin-bottom: 10px;">
-    <div style="width: 50%; background-color: #0056b3; height: 100%; line-height: 20px; color: white; text-align: center; font-size: 12px;">Good</div>
-  </div>
-</div>
-
-      </ul>
+      <h2>Languages</h2>
+      <p>English</p>
+      <div class="responsive-bar"><div class="bar-excellent">Excellent</div></div>
+      <p>French</p>
+      <div class="responsive-bar"><div class="bar-excellent">Excellent</div></div>
+      <p>Dutch</p>
+      <div class="responsive-bar"><div class="bar-good">Good</div></div>
     </div>
     <div class="main">
       <div class="section">
