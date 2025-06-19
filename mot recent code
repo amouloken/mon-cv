@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Andre Eric Mouloken</title>
+    <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+    }
+
+    .sidebar {
+      background-color: #0b3b65;
+      color: white;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: 768px) {
+      .sidebar {
+        width: 30%;
+      }
+    }
+
+    .sidebar img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .main {
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: 768px) {
+      .main {
+        width: 70%;
+      }
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    p, li {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .skills ul,
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills ul li,
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+
+    /* Barres de progression */
+    .responsive-bar {
+      background-color: #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 20px;
+      margin-bottom: 10px;
+    }
+
+    .bar-excellent {
+      background-color: #0056b3;
+      height: 100%;
+      text-align: center;
+      line-height: 20px;
+      color: white;
+      font-size: 12px;
+      width: 90%; /* Représente un niveau excellent */
+    }
+
+    .bar-good {
+      background-color: #007bff;
+      height: 100%;
+      text-align: center;
+      line-height: 20px;
+      color: white;
+      font-size: 12px;
+      width: 50%; /* Représente un niveau bon */
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <img src="https://raw.githubusercontent.com/amouloken/mon-cv/refs/heads/main/MON_PROFIL_-removebg-preview2.png" alt="Profile Picture" />
+      <h1>ANDRE ERIC MOULOKEN</h1>
+      <h2>Contact</h2>
+      <ul>
+        <li><strong>Address:</strong> 7181, Feluy Belgique</li>
+        <li><strong>Phone:</strong> +32467810630</li>
+        <li><strong>Email:</strong> andremouloken@gmail.com</li>
+        <li><strong>WWW:</strong> <a href="https://bold.pro/my/andre-mouloken" style="color: white;">Bold Profile</a></li>
+      </ul>
+      <h2>Skills</h2>
+      <ul>
+      <li>Programming: C#, Python, Javascript, Bash, CSS</li>
+  <li>Pandas · Git · Agile Methodologies · SQL Server Integration Services (SSIS) · Python (Programming Language) · Tableau · JavaScript · Microsoft Power BI</li>
+  <li>ETL Tools · Apache Spark · Delta Lake · Data Pipeline · ETL · Lakehouse · Data Modeling · Production · Alerting · Deployment · Testing · Security</li>
+  <li>Containerization: Portainer, Docker Swarm, Kubernetes, AWS ECR</li>
+  <li>Cloud Infrastructure: AWS (IaaS, PaaS, SaaS, CLI/API, VPS)</li>
+      </ul>
+      <h2>Languages</h2>
+      <p>English</p>
+      <div class="responsive-bar"><div class="bar-excellent">Excellent</div></div>
+      <p>French</p>
+      <div class="responsive-bar"><div class="bar-excellent">Excellent</div></div>
+      <p>Dutch</p>
+      <div class="responsive-bar"><div class="bar-good">Good</div></div>
+    </div>
+    <div class="main">
+      <div class="section">
+          <p>
+    As a Scrum and Prince2 certified professional with developing skills in Databricks, 
+    I am <strong>able to engage in demanding projects</strong> and leverage my expertise to drive positive outcomes.
+  </p>
+  <hr>
+        <h2>Work History</h2>
+        <div class="job">
+          <h3>Data Talend Engineer</h3>
+          <p><strong>Rossel Application</strong> | 2023-02 – 2024-09</p>
+          <ul>
+            <li>Designs, develops, and deploys complex data integration processes under the guidance of the Architect - Tech Lead.</li>
+            <li>Defines requirements, conducts analysis, and implements data models and ETL jobs.</li>
+            <li>Supports deployment and production operations.</li>
+            <li>Ensures data quality and validates deliverables.</li>
+            <li>Prioritizes performance, reusability, and effective monitoring.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>DevOps Engineer (Internship)</h3>
+          <p><strong>Ubidata</strong> | 2022-04 – 2022-05</p>
+          <ul>
+            <li>Advanced Data/Integration Developer Training (7 months full-time).</li>
+            <li>Technologies: Shell scripting, Python, Cloud, API Management, and more.</li>
+          </ul>
+        </div>
+       <div class="job">
+    <h3>Plant Operator</h3>
+    <p><strong>Bpost</strong> | March 2019 – January 2020</p>
+    <ul>
+      <li>Oversaw the sorting and processing of large volumes of mail and packages, ensuring operational efficiency.</li>
+      <li>Collaborated with logistics teams to maintain workflow efficiency in high-paced environments.</li>
+      <li>Developed a strong understanding of operational workflows, quality control, and process automation, which further fueled my interest in system optimization and data-driven decision-making.</li>
+    </ul>
+  </div>
+        <div class="job">
+          <h3>School IT Operator</h3>
+          <p><strong>University of Bridgeport</strong> | 2015-01 – 2018-01</p>
+          <ul>
+            <li>Maintained 99% uptime of a network of 20+ Unix servers.</li>
+            <li>Used Jenkins to automate build and deployment processes.</li>
+            <li>Managed local deployments in Kubernetes, creating clusters and containerized applications.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Linux Administrator</h3>
+          <p><strong>Aerotek</strong> | 2013-01 – 2015-10</p>
+          <ul>
+            <li>Installed, configured, and maintained web services (Apache, Nginx, PHP).</li>
+          </ul>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Education</h2>
+       <div class="education-item">
+  <h3>Entrepreneurial Management - Accelerated Training</h3>
+  <p><strong>IFAPME</strong> | January 2025 - April 2025</p>
+  <ul>
+    <li><strong>My Entrepreneurial Skills</strong>: Develop an entrepreneurial mindset (motivations, qualities, attitudes) by identifying your own entrepreneurial skills and learning about support for business creation.</li>
+    <li><strong>My Project and Legislation</strong>: Research and analyze legal aspects to make informed decisions on status, procedures, legal forms, obligations, and consumer protection.</li>
+    <li><strong>My Commercial and Communication Strategy Tools</strong>: Develop a business plan, commercial strategy, and communication plan using appropriate tools.</li>
+    <li><strong>Me, the Responsible Entrepreneur</strong>: Understand the challenges of sustainable development and make the right choices when creating and growing a business.</li>
+    <li><strong>My Tools for Managing My Business Daily</strong>: Equip yourself to better understand financial management (Balance Sheet, VAT, Turnover) and make informed choices.</li>
+    <li><strong>The Profitability of My Project</strong>: Understand Belgian taxation mechanisms and how your choices impact taxes.</li>
+    <li><strong>My Tools for Managing My Taxation</strong>: Gain a precise vision of business profitability to define an effective taxation strategy.</li>
+  </ul>
+</div>
+
+<div class="education-item"> <h3>Entering the E-commerce Business, Economics</h3> <p><strong>Technofutur TIC</strong> | November 2024 - December 2024</p> <p><strong>Level:</strong> Completed</p> <p>In this course, we review the elements that will make an e-commerce site successful and of high quality.</p> <p>Regardless of the size of your business or the budget you want to invest in your e-commerce activity, by the end of the course, you will have the necessary foundations and reflective elements to launch your project.</p>
+<div class="education-item">
+  <h3>Creating Your Own Website, Computer Engineering</h3>
+  <p><strong>Technofutur TIC</strong> | November 2024 - December 2024</p>
+  <p><strong>Level:</strong> Completed</p>
+  <p>To make website creation accessible to everyone, site creation platforms have been developed by commercial enterprises.</p>
+  <p>These platforms provide everything necessary to create a website with minimal manipulation:</p>
+  <ul>
+    <li>No software to install on your own computer.</li>
+    <li>Design templates.</li>
+    <li>Tools to easily insert content on pages (text, titles, images, forms, etc.).</li>
+  </ul>
+  <p>The pages created in this way are directly accessible via the Internet.</p>
+</div>
+
+        <div class="education-item">
+          <h3>Data And Business Intelligence</h3>
+          <p><strong>Digital City</strong> | 2022-08 – 2023-12</p>
+          <ul>
+            <li>Principles in statistics and probability.</li>
+            <li>Business Intelligence: DataWarehousing, ETL.</li>
+            <li>Programming: Python, R.</li>
+            <li>Project Management: AGILE (Scrum).</li>
+          </ul>
+        </div>
+        <div class="education-item">
+          <h3>DevOps Engineer</h3>
+          <p><strong>Becode, Brussels</strong> | 2021-09 – 2022-03</p>
+          <ul>
+            <li>Ansible, Docker, Wireshark, GitLab, TCP/IP.</li>
+            <li>Shell scripting, AZURE & AWS, Jenkins, Linux, Git.</li>
+          </ul>
+        </div>
+  <div class="education-item">
+    <h3>Dutch UE1 & UE2</h3>
+    <p><strong>Institut Auderghemois de Promotion Sociale</strong> | March 2020 – January 2021</p>
+  </div>
+
+  <div class="education-item">
+    <h3>WordPress Development</h3>
+    <p><strong>Mangeursdetoiles, Brussels</strong> | February 2021 – March 2021</p>
+  </div>
+
+  <div class="education-item">
+    <h3>Photoshop Training</h3>
+    <p><strong>Mangeursdetoiles, Brussels</strong> | April 2021 – May 2021</p>
+  </div>
+
+  <div class="education-item">
+    <h3>Illustrator Training</h3>
+    <p><strong>Mangeursdetoiles, Brussels</strong> | May 2021 – June 2021</p>
+  </div>
+        <div class="education-item">
+          <h3>Master's: Computer Engineering</h3>
+          <p><strong>University of Bridgeport</strong> | 2015-10 – 2017-12</p>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Certifications</h2>
+        <ul>
+          <li>Certified Scrum Master</li>
+          <li>Databricks Certified Data Engineer Professional</li>
+          <li>Databricks Certified Data Engineer Associate</li>
+          <li>PRINCE2 Foundation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
